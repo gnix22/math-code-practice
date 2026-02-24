@@ -1,2 +1,2 @@
-# math-code-practice
-Mathematical code.
+# Introduction
+This repository is aimed at giving me a chance in my downtime to play around with various languages I'm interested in, and implement algorithms and computational concepts I've learned in my classes from scratch. The goal is not for me to necessarily create the fastest code (although, where possible I want to attempt to create optimized code), but to understand the concepts in a different perspective, and understand how they would be implemented in a real-world context. It also serves a purpose to prepare me for potential research related positions, and job opportunities as I will be able to have resuable code to translate into those projects as well. I will probably flesh out this README as I move further along.
