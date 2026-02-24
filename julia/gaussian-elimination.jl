@@ -1,12 +1,13 @@
 # performs forward elimination process, forming a matrix in row echelon form,
 # function then fed into back substitution to produce a solution to a system of linear equations
 # based on pseudocode from https://en.wikipedia.org/wiki/Gaussian_elimination#Pseudocode
-function gaussianElimination(listIn, dimRow, dimCol)
-    matrix = reshape(listIn, dimRow, dimCol)
+function gaussianElimination(matrix::Matrix{Float64})
+    dimRow = size(matrix, 1) # get num of rows
+    dimCol = size(matrix, 2) # get num of cols
     h = 1 # initialize the pivot row
     k = 1 # initialization of pivot column
     while h <= dimRow && k <= dimCol
-        # find the kth pivot 
+        # find the kth pivot
         iMax = h
         for i = h:dimRow
             if abs(matrix[i,k]) > abs(matrix[iMax,k])
