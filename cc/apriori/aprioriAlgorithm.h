@@ -12,6 +12,7 @@ class Apriori{
         std::vector<T> _aprioriGen(std::vector<T> prevFrequentItemsets);
     public:
         Apriori(std::vector<T> items); // constructor
-        std::vector<T> frequentItemSetGen(std::vector<T> items, double minSup);
+        std::vector<T> frequentItemSetGen(double minSup);
 };
+#include"aprioriAlgorithm.cc"
 #endif
