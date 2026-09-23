@@ -1,4 +1,4 @@
 all:
-	g++ main.cc apriori.cc -o main
+	g++ main.cc -o main
 clean:
 	rm -f main *.o
