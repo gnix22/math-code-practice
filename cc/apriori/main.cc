@@ -2,14 +2,10 @@
 #include<vector>
 int main(){
     std::vector<std::vector<std::string>> transactions = {
-        {"bread", "milk"},
-        {"bread", "diaper", "beer", "eggs"},
-        {"milk", "diaper", "beer", "cola"},
-        {"bread", "milk", "diaper", "beer"},
-        {"bread", "milk", "diaper", "cola"}
+        {"Milk", "Bread", "Butter"}, {"Milk", "Bread"}, {"Milk", "Butter"}, {"Bread", "Butter"}, {"Milk", "Bread", "Butter"}
     };
     Apriori<std::string> apriori(transactions);
-    auto frequentItemsets = apriori.freqItemsetGeneration(0.3); // 60% min support
+    auto frequentItemsets = apriori.freqItemsetGeneration(0.6); // 60% min support
     for (const auto& itemset : frequentItemsets){
         for (const auto& item : itemset) std::cout << item << " ";
         std::cout << "\n";
