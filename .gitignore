@@ -1,2 +1,4 @@
 makefile
 *.o
+__pycache__/
+venv/
